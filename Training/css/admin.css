@@ -1,0 +1,16 @@
+#abc{
+	margin-left: 900px;
+}
+.box{
+	border: 2px solid black;
+	width: 500px;
+	height: 200px;
+	margin-left: 500px;	
+	transition :5s;
+	box-shadow: 5px 10px #888888 ;
+	font-size: 30px;
+
+}
+h1{
+	text-align: center;
+}

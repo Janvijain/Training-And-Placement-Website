@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Log In | Students</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="stylelogin.css">
+	
+</head>
+<body>
+	<header>
+			<div class="topnav" id="myTopnav">
+				<h1>Universal College Of Engineering</h1>
+					 <a href="sregister.php">Student Register</a> 
+					 <a class="active" href="slogin.html">Student Login</a> 
+					 <a href="alogin.html">Admin Login</a> 
+					 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					  </a>
+					</div>
+	</header>
+	<div class="divider"></div>
+
+	<div class="loginbox">
+    <img src="assets/student.PNG" class="avatar">
+        <h1>Login Here</h1>
+        <form action="process/sprocess.php" method="POST">
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter Email Address" required="required">
+            <p>Password</p>
+            <input type="password" name="pwd" placeholder="Enter Password" required="required">
+            <input type="submit" name="login-submit" value="Login">
+           
+        </form>
+        
+    </div>
+		
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>		
+			
+</body>
+</html>
